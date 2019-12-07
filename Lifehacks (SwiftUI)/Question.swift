@@ -7,3 +7,29 @@
 //
 
 import Foundation
+import UIKit
+
+struct User {
+    let name: String
+    let aboutMe: String
+    let reputation: Int
+    let avatar: UIImage
+}
+
+struct Question {
+    let score: Int
+    let viewCount: Int
+    let title: String
+    let body: String
+    let creationDate: Date
+    let tags: [String]
+    let owner: User
+}
+
+extension Question {
+    enum Vote: Int {
+        case none = 0
+        case up = 1
+        case down = -1
+    }
+}
