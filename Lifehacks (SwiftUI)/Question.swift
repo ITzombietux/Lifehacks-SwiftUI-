@@ -26,6 +26,7 @@ struct Question {
     let owner: User
 }
 
+//투표 비지니스 로직
 extension Question {
     enum Vote: Int {
         case none = 0
