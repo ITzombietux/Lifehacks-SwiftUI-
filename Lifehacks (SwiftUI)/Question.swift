@@ -28,17 +28,11 @@ struct Question {
     private(set) var vote = Vote.none
     
     mutating func voteUp() {
-        guard self.vote != .up else { return }
-        unvote()
-        score += vote.rawValue
-        self.vote = .up
+        cast(vote: .up)
     }
     
     mutating func voteDown() {
-        guard self.vote != .down else { return }
-        unvote()
-        score += vote.rawValue
-        self.vote = .down
+        cast(vote: .down)
     }
     
     mutating func unvote() {
@@ -53,5 +47,14 @@ extension Question {
         case none = 0
         case up = 1
         case down = -1
+    }
+}
+
+private extension Question {
+    mutating func cast(vote: Vote) {
+        guard self.vote != vote else { return }
+        unvote()
+        score += vote.rawValue
+        self.vote = vote
     }
 }
