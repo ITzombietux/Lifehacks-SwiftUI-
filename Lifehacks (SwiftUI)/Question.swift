@@ -17,13 +17,34 @@ struct User {
 }
 
 struct Question {
-    let score: Int
     let viewCount: Int
     let title: String
     let body: String
     let creationDate: Date
     let tags: [String]
     let owner: User
+    
+    private(set) var score: Int
+    private(set) var vote = Vote.none
+    
+    mutating func voteUp() {
+        guard self.vote != .up else { return }
+        unvote()
+        score += vote.rawValue
+        self.vote = .up
+    }
+    
+    mutating func voteDown() {
+        guard self.vote != .down else { return }
+        unvote()
+        score += vote.rawValue
+        self.vote = .down
+    }
+    
+    mutating func unvote() {
+        score -= vote.rawValue
+        vote = .none
+    }
 }
 
 //투표 비지니스 로직
