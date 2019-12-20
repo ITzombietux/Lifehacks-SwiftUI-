@@ -13,7 +13,7 @@
 		9333879F239B9A6D001F1572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9333879E239B9A6D001F1572 /* Assets.xcassets */; };
 		933387A2239B9A6D001F1572 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933387A1239B9A6D001F1572 /* Preview Assets.xcassets */; };
 		933387A5239B9A6D001F1572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933387A3239B9A6D001F1572 /* LaunchScreen.storyboard */; };
-		933387B0239B9A6D001F1572 /* Lifehacks__SwiftUI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933387AF239B9A6D001F1572 /* Lifehacks__SwiftUI_Tests.swift */; };
+		933387B0239B9A6D001F1572 /* QuestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933387AF239B9A6D001F1572 /* QuestionTests.swift */; };
 		933387BB239B9C03001F1572 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933387BA239B9C03001F1572 /* Question.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		933387A4239B9A6D001F1572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		933387A6239B9A6D001F1572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		933387AB239B9A6D001F1572 /* Lifehacks (SwiftUI)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lifehacks (SwiftUI)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		933387AF239B9A6D001F1572 /* Lifehacks__SwiftUI_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifehacks__SwiftUI_Tests.swift; sourceTree = "<group>"; };
+		933387AF239B9A6D001F1572 /* QuestionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTests.swift; sourceTree = "<group>"; };
 		933387B1239B9A6D001F1572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		933387BA239B9C03001F1572 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +104,7 @@
 		933387AE239B9A6D001F1572 /* Lifehacks (SwiftUI)Tests */ = {
 			isa = PBXGroup;
 			children = (
-				933387AF239B9A6D001F1572 /* Lifehacks__SwiftUI_Tests.swift */,
+				933387AF239B9A6D001F1572 /* QuestionTests.swift */,
 				933387B1239B9A6D001F1572 /* Info.plist */,
 			);
 			path = "Lifehacks (SwiftUI)Tests";
@@ -222,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				933387B0239B9A6D001F1572 /* Lifehacks__SwiftUI_Tests.swift in Sources */,
+				933387B0239B9A6D001F1572 /* QuestionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
