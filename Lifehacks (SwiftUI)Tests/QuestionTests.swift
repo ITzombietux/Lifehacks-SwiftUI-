@@ -9,6 +9,7 @@
 import XCTest
 @testable import Lifehacks__SwiftUI_
 
+//MARK: -Question 모델 테스트 코드
 class QuestionTests: XCTestCase {
     func testVoteUp() {
         var question = makeQuestion()
