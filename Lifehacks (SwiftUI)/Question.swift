@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//MARK: -유저 모델
 struct User {
     let name: String
     let aboutMe: String
@@ -16,6 +17,7 @@ struct User {
     let avatar: UIImage
 }
 
+//MARK: -질문 모델
 struct Question {
     let viewCount: Int
     let title: String
